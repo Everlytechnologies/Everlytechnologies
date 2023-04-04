@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+  height: 50px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 16px;
+}
+
+img{
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background: rebeccapurple;
+  color: white;
+  font-weight: 300;
+  padding: 0 150px;
+  height: 120px;
+}
+
+.navbar__title {
+  margin-right: auto;
+  font-size: 150%;
+  padding: 12px 16px;
+}
+
+.navbar__item {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  display: block;
+}
+.navbar__item a{
+  color: white;
+  text-decoration: none;
+}
+form{
+  width: 600px;
+  padding: 65px;
+  margin: auto;
+}
+
+.card {
+  color: black;
+  height: auto;
+  min-width: 517px !important;
+  margin: 16px auto;
+  position: relative;
+  top: -73px;
+  z-index: 1;
+  background: #ded1ff;
+}
+
+.card-title{
+  color: black;
+  font-size: 40px;
+  margin: 35px;
+  line-height: 1.5;
+}
+.card-body{
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.whyus-body{
+  color: black;
+  font-size: 26px;
+  /* width: 800px; */
+  margin: auto 275px;
+  text-align: justify;
+}
+.whyus-body li{
+  line-height: 1.5;
+  margin: 50px;
+}
+
+.home-body-list{
+  margin: auto 290px;
+}
+.home-body-list-item{
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 26px;
+  margin: 20px;
+}
+.home-body-list-item h3{
+  font-size: 36px;
+  color: cornflowerblue;
+  text-decoration: underline;
+  padding: 19px 0;
+}
